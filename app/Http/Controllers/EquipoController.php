@@ -12,7 +12,11 @@ class EquipoController extends Controller
      */
     public function index()
     {
-        //
+        $equipo=Equipo::find(1);
+        $categoria=$equipo->categoria; 
+
+        dd($categoria);
+
     }
 
     /**

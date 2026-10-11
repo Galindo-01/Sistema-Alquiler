@@ -11,8 +11,11 @@ class CategoriaController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        //
+    {        
+        $categoria=Categoria::find(1);
+        $equipos= $categoria->equipos;
+
+        dd($equipos);
     }
 
     /**

@@ -12,7 +12,10 @@ class AlquilerController extends Controller
      */
     public function index()
     {
-        //
+        $alquiler=Alquiler::find(1);
+        $cliente=$alquiler->cliente;
+        
+        dd($cliente);
     }
 
     /**

@@ -12,7 +12,9 @@ class AlquilerEquipoController extends Controller
      */
     public function index()
     {
-        //
+        $alquilerEquipo=AlquilerEquipo::all();
+
+        dd($alquilerEquipo);
     }
 
     /**
